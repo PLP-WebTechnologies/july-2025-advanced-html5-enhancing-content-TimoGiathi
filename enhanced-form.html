@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Content & Forms</title>
+  </head>
+  <
+  <body>
+    <header>
+      <h1>Enhanced HTML5 Content and Forms</h1>
+      <p>Demonstrating Lists, Tables, Media and Form Validation</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Organized Content with Lists</h2>
+
+        <h3>Web Development Technologies</h3>
+        <ul>
+          <li>
+            Frontend Technologies
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+          <li>
+            Backend Technologies
+            <ul>
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>PHP</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Project Development Steps</h3>
+        <ol>
+          <li>Planning Phase</li>
+          <li>Design Phase</li>
+          <li>Development Phase</li>
+          <li>Testing & Deployment</li>
+        </ol>
+
+        <h3>Programming Concepts</h3>
+        <dl>
+          <dt>Algorithm</dt>
+          <dd>A step-by-step procedure for solving a problem</dd>
+          <dt>API</dt>
+          <dd>Application Programming Interface for software communication</dd>
+          <dt>Framework</dt>
+          <dd>Pre-written code structure for efficient development</dd>
+        </dl>
+      </section>
+
+      <!-- Tables Section -->
+      <section>
+        <h2>Data Organization with Tables</h2>
+
+        <h3>Course Schedule</h3>
+        <table border="1">
+          <caption>
+            Web Development Course - 12 Week Program
+          </caption>
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Topic</th>
+              <th>Duration (Hours)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1-2</td>
+              <td>HTML5 Fundamentals</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>3-4</td>
+              <td>CSS3 & Responsive Design</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>5-6</td>
+              <td>JavaScript Basics</td>
+              <td>40</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Rich Media Content</h2>
+
+        <h3>Image</h3>
+        <img
+          src="/assets/pexels-adria-masi-461420600-20547522.jpg"
+          alt="Beautiful street image"
+          width="400"
+          height="250"
+        />
+
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="/assets/Nyashinski-Dopamine.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="400" height="225">
+          <source src="/assets/12807879_2160_3840_25fps.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <!-- Form Section -->
+      <section>
+        <h2>HTML5 Form with Validation</h2>
+
+        <form action="/submit" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+              placeholder="Enter first name"
+            />
+            <br /><br />
+
+            <label for="lastName">Last Name </label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+              placeholder="Enter last name"
+            />
+            <br /><br />
+
+            <label for="email">Email </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter email"
+            />
+            <br /><br />
+
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="123-456-7890"
+            />
+            <br /><br />
+
+            <label for="birthDate">Date of Birth </label>
+            <input type="date" id="birthDate" name="birthDate" required />
+            <br /><br />
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="13" max="120" />
+            <br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="username">Username </label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              minlength="3"
+              placeholder="Choose username"
+            />
+            <br /><br />
+
+            <label for="password">Password </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="8"
+              placeholder="Create password"
+            />
+            <br /><br />
+
+            <label for="website">Website</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://yoursite.com"
+            />
+            <br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="country">Country </label>
+            <select id="country" name="country" required>
+              <option value="">Select country</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+            <br /><br />
+
+            <label>Programming Languages</label><br />
+            <input type="checkbox" id="html" name="languages" value="html" />
+            <label for="html">HTML5</label><br />
+            <input type="checkbox" id="css" name="languages" value="css" />
+            <label for="css">CSS3</label><br />
+            <input
+              type="checkbox"
+              id="javascript"
+              name="languages"
+              value="javascript"
+            />
+            <label for="javascript">JavaScript</label><br /><br />
+
+            <label>Learning Style </label><br />
+            <input
+              type="radio"
+              id="visual"
+              name="learningStyle"
+              value="visual"
+              required
+            />
+            <label for="visual">Visual</label><br />
+            <input
+              type="radio"
+              id="hands-on"
+              name="learningStyle"
+              value="hands-on"
+              required
+            />
+            <label for="hands-on">Hands-on</label><br /><br />
+
+            <label for="motivation">Motivation</label><br />
+            <textarea
+              id="motivation"
+              name="motivation"
+              rows="4"
+              cols="50"
+              placeholder="Share your motivation..."
+            ></textarea>
+            <br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" />
+            <br /><br />
+
+            <label for="startDate">Available Start Date</label>
+            <input type="datetime-local" id="startDate" name="startDate" />
+            <br /><br />
+
+            <label for="referralCode">Referral Code</label>
+            <input
+              type="text"
+              id="referralCode"
+              name="referralCode"
+              readonly
+              value="WEB2025"
+            />
+            <br /><br />
+
+            <label for="search">Search Courses</label>
+            <input
+              type="search"
+              id="search"
+              name="search"
+              placeholder="Search courses..."
+            />
+            <br /><br />
+
+            <label for="color">Favorite Color</label>
+            <input type="color" id="color" name="color" value="#0000ff" />
+            <br /><br />
+
+            <label for="hours">Weekly Study Hours</label>
+            <input
+              type="range"
+              id="hours"
+              name="hours"
+              min="1"
+              max="40"
+              value="10"
+            />
+            <br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Terms</legend>
+
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the Terms and Conditions *</label>
+            <br /><br />
+
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">Subscribe to newsletter</label>
+            <br /><br />
+          </fieldset>
+
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset Form</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
